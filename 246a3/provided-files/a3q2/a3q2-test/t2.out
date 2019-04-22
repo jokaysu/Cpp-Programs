@@ -1,0 +1,31 @@
+New Matrix =
+   0    1 
+   1    0 
+
+m1 =
+   0    1 
+   1    0 
+
+New Matrix =
+   0    1 
+   1    0 
+
+old Matrix =
+   0    1 
+   1    0 
+
+Matrix m2 deleted
+Matrix m2 =
+   1    0 
+   0    1 
+
+m1 + m2 =
+   1    1 
+   1    1 
+
+m1 * m2 =
+   0    1 
+   1    0 
+
+Matrix m1 deleted
+Matrix m2 deleted

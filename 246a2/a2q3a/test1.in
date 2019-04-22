@@ -1,0 +1,2 @@
+int f ( int x ) { // This is my function
+int y = x ; return y ; } // Haha

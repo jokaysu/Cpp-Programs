@@ -1,0 +1,126 @@
+Group g1 with name "abc" has been created.
+Added email address "a@bc" to group g1 =
+abc
+[a@bc]
+
+Added email address "a@bc" to group g1 =
+abc
+[a@bc, a@bc]
+
+Added email address "ab@c" to group g1 =
+abc
+[a@bc, a@bc, ab@c]
+
+Find email address "a@bc" in group g1 successfully; node =
+a@bc
+Find email address "ab@c" in group g1 successfully; node =
+ab@c
+Removed email address "a@bc" from group g1 successfully; g1 =
+abc
+[a@bc, ab@c]
+
+Group g2 with name "def" has been created.
+Group g3 with name "def" has been created.
+Group g4 with name "efg" has been created.
+Added email address "d@ef" to group g2 =
+def
+[d@ef]
+
+Added email address "de@f" to group g3 =
+def
+[de@f]
+
+Added email address "e@fg" to group g4 =
+efg
+[e@fg]
+
+Move g2 to g1
+g1 =
+abc
+[a@bc, ab@c]
+	def
+	[d@ef]
+
+Move g3 to g1
+g1 =
+abc
+[a@bc, ab@c]
+	def
+	[d@ef]
+	def
+	[de@f]
+
+Move g4 to g1
+g1 =
+abc
+[a@bc, ab@c]
+	def
+	[d@ef]
+	def
+	[de@f]
+	efg
+	[e@fg]
+
+Find group name "efg" in group g1 successfully; node =
+efg
+[e@fg]
+
+Find group name "def" in group g1 successfully; node =
+def
+[d@ef]
+
+Removed subgroup named "efg" from group g1 successfully; g1 =
+abc
+[a@bc, ab@c]
+	def
+	[d@ef]
+	def
+	[de@f]
+
+Removed subgroup named "def" from group g1 successfully; g1 =
+abc
+[a@bc, ab@c]
+	def
+	[de@f]
+
+Find group name "efg" in group g1 unsuccessfully
+Find group name "def" in group g1 successfully; node =
+def
+[de@f]
+
+Group g1 =
+abc
+[a@bc, ab@c]
+	def
+	[de@f]
+
+Group g2 with name "ab" has been created.
+Added email address "a@b" to group g2 =
+ab
+[a@b]
+
+Move g1 to g2
+g2 =
+ab
+[a@b]
+	abc
+	[a@bc, ab@c]
+		def
+		[de@f]
+
+Find group name "abc" in group g2 successfully; node =
+abc
+[a@bc, ab@c]
+	def
+	[de@f]
+
+Find group name "def" in group g2 successfully; node =
+def
+[de@f]
+
+Removed subgroup named "def" from group g2 successfully; g2 =
+ab
+[a@b]
+	abc
+	[a@bc, ab@c]
+

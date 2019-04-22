@@ -1,0 +1,23 @@
+Group g0 with name "abc" has been created.
+Added email address "a@j.com" to group g0 =
+abc
+[a@j.com]
+
+Added email address "b@j.com" to group g0 =
+abc
+[a@j.com, b@j.com]
+
+Find email address "a@j.com" in group g0 successfully; node =
+a@j.com
+Find email address "a@j.co" in group g0 unsuccessfully
+Find email address "b@j.com" in group g0 successfully; node =
+b@j.com
+Removed email address "b@j.com" from group g0 successfully; g0 =
+abc
+[a@j.com]
+
+Find email address "b@j.com" in group g0 unsuccessfully
+Group g0 =
+abc
+[a@j.com]
+
